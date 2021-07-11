@@ -4,10 +4,90 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Theme Hunter</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="bg-blue-dark text-sm md:text-base">
+    
+    <main class="max-w-6xl py-5 md:py-10 px-3 md:px-0 mx-auto">
+      <header class="relative flex justify-between items-center bg-white py-3 md:py-3 pl-5 pr-3 rounded-lg">
+        <div><svg width="37" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path d="M5.58 4.992v4.492l1.027.998 1.028.998V8.045c0-1.967.117-3.435.294-3.435.499 0 9.103 8.573 9.103 9.072 0 .264-.97 1.438-2.144 2.613l-2.114 2.113H9.25l-3.524.03-1.145.998-1.145 1.027h3.406c1.909 0 3.436.118 3.436.235 0 .734-.881.94-4.258.94l-3.524.03-1.145.997-1.145 1.028H8.516v4.257c0 2.348.088 4.256.205 4.256.118 0 .588-.352 1.028-.792.822-.793.822-.822.822-4.492 0-3.23.06-3.787.529-4.198.294-.294.646-.5.763-.5.147 0 .147 1.527.03 3.377-.147 2.231-.118 3.376.088 3.376.147 0 .705-.47 1.233-1.057l.94-1.086-.176-3.552-.147-3.552 2.261-2.29c1.233-1.234 2.408-2.261 2.584-2.261.206 0 1.292.998 2.437 2.231l2.085 2.231V26.893l.91 1.057c.5.558 1.029 1.027 1.205 1.027.176 0 .205-1.262.058-3.376-.205-3.464-.088-3.875.852-2.848.411.44.5 1.204.5 4.198 0 3.64 0 3.67.821 4.463.44.44.91.792 1.028.792s.206-1.908.206-4.256v-4.257h8.046l-.999-1.028-.998-1.027H31.42c-3.054 0-3.495-.059-3.965-.587-.528-.588-.499-.588 2.907-.588h3.465l-.969-1.027-.969-1.028h-7.4l-2.114-2.143c-1.145-1.174-2.114-2.319-2.114-2.524 0-.5 8.516-9.13 9.044-9.13.265 0 .353.88.353 3.375v3.406l1.027-1.028 1.028-1.027V.5h-8.457l-.822.94-.793.968 3.142.088c2.203.06 3.113.177 3.113.44 0 .382-8.868 9.307-9.28 9.307-.323 0-9.22-9.1-9.22-9.453 0-.117 1.468-.235 3.289-.235h3.289l-.999-1.027L13.978.5H5.579v4.492z" fill="#13207B"/>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <path fill="#fff" transform="translate(0 .5)" d="M0 0h37v32H0z"/>
+            </clipPath>
+          </defs>
+        </svg>
+        </div>
+
+        <button class="md:hidden inline-flex items-center bg-blue text-white p-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+          <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg> Menu
+        </button>
+
+        <nav class="hidden md:block">
+          <ul class="flex text-sm">
+            <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 bg-blueGray-300 px-3 py-3 rounded-md font-bold" aria-current="page">Home</a></li>
+            <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">FAQ</a></li>
+            <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">Report Theft</a></li>
+            <li class="group mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">More <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+              <div class="group-hover:block dropdown-menu absolute hidden h-auto -mt-3 w-full h-auto top-full left-0 bg-white p-5 rounded-b-lg">
+                <ul>
+                  <li><a href="#">Custom link</a></li>
+                  <li><a href="#">Custom link</a></li>
+                  <li><a href="#">Custom link</a></li>
+                  <li><a href="#">Custom link</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#" class="inline-flex items-center bg-blue text-white px-4 py-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300">Submit your theme</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero max-w-3xl min-h-3/4 mx-auto flex flex-col items-center justify-center text-white text-center">
+        <div class="mx-auto mb-7">
+          <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 21.1417H43M10.1467 39.7474L31.6467 2.50833M9.95464 2.50833L31.4546 39.7474M2.02404 9.79859L38.8822 31.9452M2.54714 31.0452L40.5012 10.8341M20.8007 43V0" stroke="#B893BC" stroke-width="2"/>
+          </svg>
+        </div>
+        <h1 class="text-2xl md:text-4xl font-bold mb-4">Your #1 Source For Tumblr Themes</h1>
+        <p class="leading-9">We reblog themes, tutorials and scripts. <strong>Theme makers are welcomed to submit their themes and resources to be showcased here.</strong>  We track <span class="mx-1 text-blueGray-700 text-sm bg-blueGray-300 px-3 py-2 rounded-full font-bold">#theme hunter</span> and <span class="mx-1 text-blueGray-700 text-sm bg-blueGray-300 px-3 py-2 rounded-full font-bold">#themehunter</span></p>
+        <a href="#" class="mx-auto inline-flex items-center justify-between overflow-hidden max-w-max mt-10 focus:outline-none bg-blue-light rounded-lg focus:ring focus:border-blue-300"><span class="py-3 px-5">Scroll down </span><span class="p-3 bg-blue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l9.2 9.2M17 7v10H7"/></svg></span></a>
+      </section>
+
+      <section class="pb-20">
+        <div class="max-w-2xl text-white mb-8 md:mb-16">
+          <h2 class="text-2xl font-bold mb-2">Monthly Picks</h2>
+          <p>Mauris tempus id blandit tellus mauris, suspendisse. Ut tellus sit sit egestas varius platea. Et interdum sed vel adipiscing nisl, morbi sit sed. Faucibus leo in feugiat volutpat erat. </p>
+        </div>
+        <div class="flex flex-col md:flex-row rounded-lg overflow-hidden bg-white">
+          <div class="relative w-full h-0 pb-96">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://via.placeholder.com/800x600" alt="">
+          </div>
+          <div class="flex-auto flex flex-col">
+              <div class="p-8 flex-grow">
+                <h2 class="text-2xl font-bold mb-2">Heading title</h2>
+                <ul class="flex my-6 text-white">
+                  <li class="mr-3">
+                    <a href="#" class="text-sm bg-blue-lighter rounded-full p-2 px-4">grid</a>
+                  </li>
+                  <li class="mr-3">
+                    <a href="#" class="text-sm bg-blue-lighter rounded-full p-2 px-4">featured</a>
+                  </li>
+                </ul>
+                <div class="flex-grow">
+                  <p class="text-gray-dark">Sit amet massa condimentum aenean penatibus mi, quisque tincidunt. Id nisi, nulla pellentesque condimentum odio sed purus. Enim sagittis neque ut tempor non proin semper.</p>
+                </div>
+            </div>
+            <a href="#" class="p-4 border-t-2 border-gray-light text-center hover:bg-gray-light transition duration-150 ease-in-out focus:outline-none focus:ring focus:border-blue-300">View post</a>
+          </div>
+         
+        </div>
+      </section>
+    </main>
+  
   </body>
 </html>
