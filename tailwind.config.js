@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   purge: [
@@ -18,6 +19,10 @@ module.exports = {
       current: 'currentColor',
       red: colors.red,
       blueGray:colors.blueGray,
+      red:colors.red,
+      violet:colors.violet,
+      green:colors.emerald,
+      yellow:colors.amber,
       blue: {
         lighter: '#8A96EE',
         light:'#263BAB',
@@ -46,5 +51,22 @@ module.exports = {
       display:['group-hover', 'group-focus']
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('firefox', ({ container, separator }) => {
+        const isFirefoxRule = postcss.atRule({
+          name: '-moz-document',
+          params: 'url-prefix()',
+        });
+
+        isFirefoxRule.append(container.nodes);
+        container.append(isFirefoxRule);
+        isFirefoxRule.walkRules((rule) => {
+          rule.selector = `.${e(
+            `firefox${separator}${rule.selector.slice(1)}`
+          )}`;
+        });
+      });
+    }),
+  ],
 }
