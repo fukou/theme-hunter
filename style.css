@@ -15,3 +15,8 @@
     background: radial-gradient(circle at 100% 80%, #ff66007c, transparent 30%),radial-gradient(circle at 80% 50%, #0b113a, transparent 35%),radial-gradient(circle at 0% 100%, #e7945c, #0f1750, transparent 65%);
     z-index: -1;
 }
+
+.reblog-trail h2 { @apply text-2xl font-bold mb-2; }
+.reblog-trail p ~ p { @apply mt-3; }
+.reblog-trail a { @apply underline; }
+.reblog-trail ul { @apply list-disc list-inside; }
