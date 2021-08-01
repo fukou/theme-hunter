@@ -1,3 +1,5 @@
+![Cover image](https://repository-images.githubusercontent.com/384942698/a8fbcfc4-e821-44a8-b5fc-e16a5b0c0e21)
+
 # Theme Hunter
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e762efe-9aa1-45b3-ab0a-3526045c273d/deploy-status)](https://app.netlify.com/sites/theme-hunter/deploys)
 > Source code for theme-hunter, your #1 source for Tumblr themes
