@@ -52,6 +52,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     plugin(function ({ addVariant, e, postcss }) {
       addVariant('firefox', ({ container, separator }) => {
         const isFirefoxRule = postcss.atRule({

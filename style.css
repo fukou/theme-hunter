@@ -19,9 +19,21 @@
     background: radial-gradient(circle at 100% 80%, #ff66007c, transparent 30%),radial-gradient(circle at 80% 50%, #0b113a, transparent 35%),radial-gradient(circle at 0% 100%, #e7945c, #0f1750, transparent 65%);
     z-index: -1;
 }
+.posts__body { @apply py-6; }
+.reblog-list { @apply text-blueGray-700; }
+.reblog-list div { @apply px-8; }
+.reblog-list h1, .reblog-list h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
+.reblog-list p ~ p { @apply my-3; }
+.reblog-list a { @apply underline; }
+.reblog-list ul { @apply list-disc list-inside; }
+.reblog-post-avatar { @apply flex items-center my-2 px-8; }
+.reblog-post-avatar + div { @apply py-4 px-8; }
+.reblog-post-avatar span { @apply ml-4; }
+.reblog-post-avatar img { @apply w-8 h-8 rounded-md; }
+.reblog-post-avatar .user-blog { @apply font-bold; }
+ 
+.tmblr-full { @apply -mx-8; }
+.tmblr-full img { @apply w-full my-4; }
+.tmblr-full .tmblr-attribution { @apply -mt-4 py-2 px-4 text-sm bg-blueGray-300 text-right; }
 
-.reblog-trail { @apply text-blueGray-700; }
-.reblog-trail h1, .reblog-trail h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
-.reblog-trail p ~ p { @apply mt-3; }
-.reblog-trail a { @apply underline; }
-.reblog-trail ul { @apply list-disc list-inside; }
+.read-more, .read_more { @apply flex items-center justify-center w-full mt-8 p-4 rounded-lg border-2 border-gray-light text-center hover:bg-gray-light transition duration-150 ease-in-out;}
