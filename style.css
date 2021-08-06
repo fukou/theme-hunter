@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*:focus {
+    @apply focus:outline-none focus:ring focus:border-blueGray-300;
+}
+
 .hero:before {
     content: '';
     position: absolute;
@@ -16,7 +20,8 @@
     z-index: -1;
 }
 
-.reblog-trail h2 { @apply text-2xl font-bold mb-2; }
+.reblog-trail { @apply text-blueGray-700; }
+.reblog-trail h1, .reblog-trail h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
 .reblog-trail p ~ p { @apply mt-3; }
 .reblog-trail a { @apply underline; }
 .reblog-trail ul { @apply list-disc list-inside; }

@@ -41,7 +41,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
+      sans: ['Favorit', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {},
