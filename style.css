@@ -19,6 +19,11 @@
     background: radial-gradient(circle at 100% 80%, #ff66007c, transparent 30%),radial-gradient(circle at 80% 50%, #0b113a, transparent 35%),radial-gradient(circle at 0% 100%, #e7945c, #0f1750, transparent 65%);
     z-index: -1;
 }
+
+blockquote {
+    @apply my-4 border-l-4 px-4 border-blueGray-300;
+}
+
 .posts__body { @apply py-6; }
 .reblog-list { @apply text-blueGray-700; }
 .reblog-list div { @apply px-8; }

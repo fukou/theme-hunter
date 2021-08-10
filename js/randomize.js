@@ -15,7 +15,7 @@ const postLength = tumblr_api_read["posts-total"];
 
 // console.log(container.innerHTML.trim() !== '');
 
-for (let k = 0; k < postLength; k++) {
+for (let k = 0; k < 1; k++) {
    const post = tumblr_api_read.posts[k];
 
   //  const caption = post["photo-caption"];
@@ -56,7 +56,7 @@ for (let k = 0; k < postLength; k++) {
               </div>
             
               `;
-      truncate(card.querySelector(".caption"), 35, "...");
+      // truncate(card.querySelector(".caption"), 35, "...");
    }
    container.appendChild(card);
 }
