@@ -2,9 +2,9 @@ const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  purge: [
-    './index.html',
-  ],
+  // purge: [
+  //   './index.html',
+  // ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     minHeight: {
