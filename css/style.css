@@ -26,7 +26,7 @@ blockquote {
 
 .posts__body { @apply py-6; }
 .reblog-list { @apply text-blueGray-700; }
-.reblog-list div { @apply px-8; }
+.reblog-list > div { @apply px-8; }
 .reblog-list h1, .reblog-list h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
 .reblog-list p ~ p { @apply my-3; }
 .reblog-list a { @apply underline; }
@@ -37,7 +37,7 @@ blockquote {
 .reblog-post-avatar img { @apply w-8 h-8 rounded-md; }
 .reblog-post-avatar .user-blog { @apply font-bold; }
  
-.tmblr-full { @apply -mx-8; }
+.tmblr-full, .tmblr-embed, .npf_photoset { @apply -mx-8; }
 .tmblr-full img { @apply w-full my-4; }
 .tmblr-full .tmblr-attribution { @apply -mt-4 py-2 px-4 text-sm bg-blueGray-300 text-right; }
 
