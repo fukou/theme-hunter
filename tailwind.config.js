@@ -2,9 +2,9 @@ const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  // purge: [
-  //   './index.html',
-  // ],
+  purge: [
+    'index.html',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     minHeight: {
@@ -53,6 +53,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
     plugin(function ({ addVariant, e, postcss }) {
       addVariant('firefox', ({ container, separator }) => {
         const isFirefoxRule = postcss.atRule({
