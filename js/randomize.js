@@ -4,13 +4,13 @@ const randomize = (data) => {
   const container = document.querySelector(".monthly_picks");
   const postLength = data["posts-total"];
 
-  // console.log(container.innerHTML.trim() !== '');
+  console.log(`Jumlah post sebanyak ${postLength}`);
 
   for (let k = 0; k < 1; k++) {
-    const post = data.posts[k];
+    const post = data.posts[Math.floor(Math.random() * postLength)];
 
-    //  const caption = post["photo-caption"];
-    //  const body = post["regular-body"];
+    console.log(`Post berada di-indeks ${Math.floor(Math.random() * postLength)}`);
+    
     const date = post["date"];
     const maker = post["reblogged-from-name"];
     const orig = post["reblogged-from-url"];
@@ -40,7 +40,7 @@ const randomize = (data) => {
               </a>
               <div class="flex-auto flex flex-col">
                   <div class="p-8 flex-grow">
-                    <h2 class="text-xl font-bold mb-2"><a href="${orig}" class="flex items-center"><img src="${orig_img}" class="w-9 h-9 mr-3 rounded-full" alt="${maker}"> Theme by ${maker}</a></h2>
+                    <h2 class="text-xl font-bold mb-2"><a href="${orig}" class="flex items-center"><img src="${orig_img}" class="border border-gray w-9 h-9 mr-3 rounded-full" alt="${maker}"> Theme by ${maker}</a></h2>
                     <ul class="flex flex-wrap mt-6 mb-2 text-white">
                     ${tags_data}
                     </ul>

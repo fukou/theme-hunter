@@ -19,49 +19,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&family=Merriweather:ital@0;1&display=swap" rel="stylesheet"> 
     <link
          rel="stylesheet"
          href="https://assets.tumblr.com/fonts/favorit/stylesheet.css?v=1"
     />
-   <link rel="stylesheet" href="https://theme-hunter.netlify.app/assets/index.22381196.css">
-      <style>
-        .tmblr-iframe-compact .tmblr-iframe--unified-controls {
-            width: 100% !important;
-        }
+   <link rel="stylesheet" href="https://static.tumblr.com/5ojoydj/IiOqzbhwz/index.1fea9a3c.css">
+    <link href="https://static.tumblr.com/0podkko/xIbplezmo/modified_photosets.css" rel="stylesheet">
+   <style>
+        html { scroll-behavior:smooth;}   
+        #main { scroll-margin-top: -1em; }
         
-        @media (min-width: 60rem) {
-           .iframe-controls--phone-mobile,
-           .tmblr-iframe--app-cta-button,
-           .tmblr-iframe:not(#new-tumblr-controls) {
-              visibility: hidden !important;
-              display: none !important;
+       .posts__body:empty {
+           display:none;
+       }
+       .tmblr-embed.tmblr-full:first-of-type
+       
+       @media (max-width:60rem) {
+           .is-custom-iframe {
+               display:none!important;
            }
-        }
-        .iframe-container, iframe#new-tumblr-controls {
-            position: unset;
-            top: 0px;
-            left: 0px;
-            height: 54px;
-            width: 100% !important;
-        }
-        .tmblr-full, .tmblr-embed, .npf_photoset {
-            margin-top:1.5rem;
-            margin-bottom:1.5rem;
-        }
-        .posts__media .tmblr-full, .posts__media .tmblr-embed, .posts__media .npf_photoset {
-            margin:0;
-        }
-        
-        .posts__media .tmblr-full *, .posts__media .tmblr-embed *, .posts__media .npf_photoset * {
-            margin:0;
-        }
-  </style>
+           .tmblr-iframe--unified-controls {
+               position:absolute!important;
+           }
+       }
+       
+   </style>
   </head>
   <body class="bg-blue-dark text-base">
     
-    <div class="bg-blue" x-show="close">
-       <div class="max-w-7xl mx-auto py-2 px-3 sm:px-6 lg:px-8">
+    <div class="bg-blue is-custom-iframe">
+       <div class="max-w-7xl mx-auto py-2 px-3 sm:px-6 lg:px-14">
             <div class="flex items-center justify-between flex-wrap">
               <div class="iframe-container"><iframe id="new-tumblr-controls" src="" frameborder="0" scrolling="no" name="unified-controls" class="tmblr-iframe tmblr-iframe--unified-controls tmblr-iframe--loaded iframe-controls--desktop"></iframe></div>
             </div>
@@ -85,22 +73,22 @@
   
           <nav class="hidden md:block">
             <ul class="flex">
-              <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 bg-blueGray-300 px-3 py-3 rounded-md font-bold" aria-current="page">Home</a></li>
-              <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">FAQ</a></li>
-              <li class="mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">Report Theft</a></li>
+              <li class="mr-4"><a href="/" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 bg-blueGray-300 px-3 py-3 rounded-md font-bold" aria-current="page">Home</a></li>
+              <li class="mr-4"><a href="/faq" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">FAQ</a></li>
+              <li class="mr-4"><a href="/report" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">Report Theft</a></li>
               <li class="group mr-4"><a href="#" class="inline-flex items-center focus:outline-none focus:ring focus:border-blue-300 hover:bg-blueGray-300 px-3 py-3 rounded-md">More <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
                 <!-- hidden -->
                 <div class="group-hover:block group-focus:block dropdown-menu absolute hidden w-full h-auto pt-8 top-full left-0">
                   <div class="bg-white p-8 rounded-lg shadow-md">
                     <ul class="flex items-center mb-3">
-                      <li class="flex-1 mr-3"><a href="#" class="flex w-full rounded-lg bg-violet-200 py-2 px-4">Tutorials</a></li>
-                      <li class="flex-1 mr-3"><a href="#" class="flex w-full rounded-lg bg-red-200 py-2 px-4">Resources</a></li>
-                      <li class="flex-1 mr-3"><a href="#" class="flex w-full rounded-lg bg-green-200 py-2 px-4">Base Codes</a></li>
-                      <li class="flex-1"><a href="#" class="flex w-full rounded-lg bg-yellow-200 py-2 px-4">Theme Makers List</a></li>
+                      <li class="flex-1 mr-3"><a href="/tutorials" class="flex w-full rounded-lg bg-violet-200 py-2 px-4">Tutorials</a></li>
+                      <li class="flex-1 mr-3"><a href="/resources" class="flex w-full rounded-lg bg-red-200 py-2 px-4">Resources</a></li>
+                      <li class="flex-1 mr-3"><a href="/tagged/theme-base" class="flex w-full rounded-lg bg-green-200 py-2 px-4">Base Codes</a></li>
+                      <li class="flex-1"><a href="https://theme-hunter.tumblr.com/post/13827235916/theme-makers-last-updated-11-06-2013" class="flex w-full rounded-lg bg-yellow-200 py-2 px-4">Theme Makers List</a></li>
                     </ul>
                     <ul class="flex items-center">
-                      <li class="flex-1 mr-3"><a href="#" class="flex w-full rounded-lg bg-gray-light py-2 px-4">How to install Tumblr themes</a></li>
-                      <li class="flex-1"><a href="#" class="flex w-full rounded-lg bg-gray-light py-2 px-4">How to install page themes</a></li>
+                      <li class="flex-1 mr-3"><a href="https://theme-hunter.tumblr.com/post/24841295379/what-im-saying-does-not-apply-specifically-to" class="flex w-full rounded-lg bg-gray-light py-2 px-4">How to install Tumblr themes</a></li>
+                      <li class="flex-1"><a href="https://theme-hunter.tumblr.com/post/48523132748/anon1-this-question-has-been-asked-countless-of" class="flex w-full rounded-lg bg-gray-light py-2 px-4">How to install page themes</a></li>
                     </ul>
                     <div class="pt-5 border-t-2 border-gray-light mt-6">
                       <div class="grid grid-cols-1 md:grid-cols-2">
@@ -111,20 +99,19 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                               </svg>
                             </div>
-                            <span>Theme types / All themes</span>
+                            <span>Theme types / <a class="font-bold underline" href="/tagged/themes">All themes</a></span>
                           </div>
                           <ul class="grid grid-cols-1 md:grid-cols-2">
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Grid <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Horizontal Scroll <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Fansite <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Contained Posts <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Minimalist <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Music Blogs <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">All in One <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Holiday <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/grid" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Grid <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/horizontal" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Horizontal Scroll <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/fansite" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Fansite <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/cont" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Contained Posts <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/min" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Minimalist <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/music blog" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Music Blogs <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/allinont" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">All in One <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/holiday" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Holiday <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
                           </ul>
                         </div>
-                       
                         <div class="flex flex-col">
                           <div class="flex items-center mb-4">
                             <div class="icon flex justify-center items-center w-12 h-12 bg-blue text-white p-3 rounded-lg mr-4">
@@ -132,19 +119,19 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
                               </svg>
                             </div>
-                            <span>Page types / All page themes</span>
+                            <span>Page types / <a class="font-bold underline" href="/tagged/codes">All page themes</a></span>
                           </div>
                           <ul class="grid grid-cols-1 md:grid-cols-2">
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">About Pages <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Blogroll Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1 mb-2"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">All In One Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Media Pages for Music, Books, Network</span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Frequently Asked Questions Pages</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Family/Favorites/Character Pages</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Hiatus Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Redirect/Saved URLs Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Tags/Navigation Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
-                            <li class="flex-1"><a href="#" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Rules Pages/Table Pages</span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/about" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">About Pages <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/blogroll" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Blogroll Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1 mb-2"><a href="/tagged/allinonep" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">All In One Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/media" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Media Pages for Music, Books, Network</span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/faqpg" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Frequently Asked Questions Pages</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/fam" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Family/Favorites/Character Pages</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/hiatus" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Hiatus Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/moved" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Redirect/Saved URLs Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/tags" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4">Tags/Navigation Pages <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
+                            <li class="flex-1"><a href="/tagged/rules" class="flex items-center justify-between w-full rounded-lg hover:bg-gray-light py-2 px-4"><span class="truncate">Rules Pages/Table Pages</span>  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></li>
                           </ul>
                         </div>
                       </div>
@@ -153,7 +140,7 @@
                   
                 </div>
               </li>
-              <li><a href="#" class="inline-flex items-center bg-blue text-white px-4 py-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300">Submit your theme</a></li>
+              <li><a href="/submit" class="inline-flex items-center bg-blue text-white px-4 py-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300">Submit your theme</a></li>
             </ul>
           </nav>
     
@@ -173,45 +160,37 @@
         </div>
         <h1 class="text-2xl md:text-4xl font-bold mb-4">Your #1 Source For Tumblr Themes</h1>
         <p class="leading-9 text-lg">We reblog themes, tutorials and scripts. <strong>Theme makers are welcomed to submit their themes and resources to be showcased here.</strong>  We track <span class="mx-1 text-blueGray-700 text-sm bg-blueGray-300 px-3 py-2 rounded-full font-bold">#theme hunter</span> and <span class="mx-1 text-blueGray-700 text-sm bg-blueGray-300 px-3 py-2 rounded-full font-bold">#themehunter</span></p>
-        <a href="#" class="mx-auto inline-flex items-center justify-between overflow-hidden max-w-max mt-10 focus:outline-none bg-blue-light rounded-lg focus:ring focus:border-blue-300"><span class="py-3 px-5">Scroll down </span><span class="p-3 bg-blue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l9.2 9.2M17 7v10H7"/></svg></span></a>
+        <a href="#main" class="mx-auto inline-flex items-center justify-between overflow-hidden max-w-max mt-10 focus:outline-none bg-blue-light rounded-lg focus:ring focus:border-blue-300"><span class="py-3 px-5">Scroll down </span><span class="p-3 bg-blue"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l9.2 9.2M17 7v10H7"/></svg></span></a>
       </section>
 
-      <section class="pb-20"  data-aos="fade-up" data-aos-delay="600">
+      <section class="pb-20"  data-aos="fade-up" data-aos-delay="600" id="main">  
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
           <div class="md:col-span-2 space-y-8 md:space-y-16">
              {block:Posts inlineMediaWidth="700" inlineNestedMediaWidth="700"}
              <div {block:Date}id="{PostID}"{/block:Date} class="{PostType} posts article-container flex relative"> 
-              <div class="hidden md:block sticky top-24 self-start flex-shrink-0 mr-8">
-                <img class="w-16 h-16 rounded-lg" src="https://assets.tumblr.com/images/default_avatar_96.png" alt="">
+              <div class="hidden md:block sticky top-24 self-start flex-shrink-0 mr-8">          
+                <img class="w-16 h-16 rounded-lg" src="{block:RebloggedFrom}{ReblogRootPortraitURL-64}{/block:RebloggedFrom} {block:NotReblog}{PortraitURL-64}{/block:NotReblog}" alt="">
               </div>
 
               <article class="rounded-lg overflow-hidden bg-white">
                 <div class="flex items-center gap-1.5 py-5 px-8 border-b border-gray-light text-sm">
+                  {block:NotReblog}
                   <a href="/" class="font-bold">{Name}</a>
-                  <svg viewBox="0 0 12.3 13.7" width="16" height="14" fill="rgba(var(--black), 0.65)"><path d="M9.2.2C8.7-.2 8 .2 8 .8v1.1H3.1c-2 0-3.1 1-3.1 2.6v1.9c0 .5.4.9.9.9.1 0 .2 0 .3-.1.3-.1.6-.5.6-.8V5.2c0-1.4.3-1.5 1.3-1.5H8v1.1c0 .6.7 1 1.2.6l3.1-2.6L9.2.2zM12 7.4c0-.5-.4-.9-.9-.9s-.9.4-.9.9v1.2c0 1.4-.3 1.5-1.3 1.5H4.3V9c0-.6-.7-.9-1.2-.5L0 11l3.1 2.6c.5.4 1.2.1 1.2-.5v-1.2h4.6c2 0 3.1-1 3.1-2.6V7.4z"></path></svg>
-                  <a href="#" class="text-gray-dark font-bold">username</a>
+                  {/block:NotReblog}
+                  {block:RebloggedFrom}
+                  <a href="{ReblogRootURL}" class="text-gray-dark font-bold">{ReblogRootName}</a>{/block:RebloggedFrom}
                 </div>
                 <section class="posts__media">
                 {block:Text}{block:Title}
-                    <h1 class="pt-4 pb-2 px-8 text-2xl font-bold">{Title}</h1>{/block:Title}{/block:Text}{block:Photo}
+                    <h1 class="pt-6 pb-2 px-8 text-2xl font-bold">{Title}</h1>{/block:Title}{/block:Text}{block:Photo}
                     <figure{block:HighRes} class="tmblr-full"{/block:HighRes}>
                         {LinkOpenTag}
                             <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"{block:Exif} title="{block:Camera} {Camera} {/block:Camera}{block:Aperture} {Aperture} {/block:Aperture}{block:Exposure} {Exposure} {/block:Exposure}{block:FocalLength} {FocalLength} {/block:FocalLength}"{/block:Exif}>
                         {LinkCloseTag}
-                    </figure>{/block:Photo}{block:Panorama}
-                    <figure class="tmblr-full">
-                        {LinkOpenTag}
-                            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"{block:Exif} title="{block:Camera} {Camera} {/block:Camera}{block:Aperture} {Aperture} {/block:Aperture}{block:Exposure} {Exposure} {/block:Exposure}{block:FocalLength} {FocalLength} {/block:FocalLength}"{/block:Exif}>
-                        {LinkCloseTag}
-                    </figure>{/block:Panorama}{block:Photoset}
-                    {Photoset}{/block:Photoset}{block:Quote}
+                    </figure>{/block:Photo}{block:Photoset}
+                        <div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" onclick="lightbox(this)"><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div>{block:Photoset}{block:Quote}<div class="p-8 border-b border-gray-light">
                     <p class="npf_quote {Length}">{Quote}</p>{block:Source}
-                    <table>
-                        <tr>
-                            <td>&mdash;</td>
-                            <td>{Source}</td>
-                        </tr>
-                    </table>{/block:Source}{/block:Quote}{block:Link}
+                    <p class="npf_quote_source">&mdash; {Source} </p>{/block:Source}</div>{/block:Quote}{block:Link}
                     <div class="npf-link-block {block:Thumbnail}has-poster not-{/block:Thumbnail}no-poster">
                         <a href="{URL}" {Target}>{block:Thumbnail}
                             <div class="poster" style="background-image: url({Thumbnail-HighRes});">{/block:Thumbnail}
@@ -222,23 +201,28 @@
                                 <div class="site-name">{Host}</div>{/block:Host}
                             </div>
                         </a>
-                    </div>{/block:Link}{block:Chat}{block:Title}
+                    </div>{/block:Link}{block:Chat}<div class="p-8 border-b border-gray-light">{block:Title}
                     <h1>{Title}</h1>{/block:Title}{block:Lines}
                     <p class="npf_chat">{block:Label}
                         <b>{Label}</b>{/block:Label}
                         {Line}
-                    </p>{/block:Lines}{/block:Chat}{block:Audio}{block:AudioEmbed}
+                    </p>{/block:Lines}</div>{/block:Chat}{block:Audio}{block:AudioEmbed}
                     {AudioEmbed}{/block:AudioEmbed}{/block:Audio}{block:Video}
                     {VideoEmbed-700}{/block:Video}{block:Answer}
-                    <div>
-                        <img class="avatar" src="{AskerPortraitURL-64}" alt="">
-                        <strong class="username">{Asker}</strong>
-                        <blockquote>{Question}</blockquote>
+                    <div class="flex p-5 border-b border-gray">
+                        <img class="avatar avatar flex-none w-16 h-16 rounded mr-6" src="{AskerPortraitURL-64}" alt="">
+                        <div class="p-5 bg-gray-light rounded">
+                         <strong class="username mb-1">{Asker}</strong>
+                          {Question}
+                        </div>
                     </div>{block:Answerer}
-                    <div>
-                        <img class="avatar" src="{AnswererPortraitURL-64}" alt="">
-                        <strong class="username">{Answerer}</strong>
-                        <blockquote>{Answer}</blockquote>
+                    <div class="flex p-5 border-b border-gray">
+                        <img class="avatar avatar flex-none w-16 h-16 rounded mr-6" src="{AnswererPortraitURL-64}" alt="">
+                         <div class="p-5 bg-gray-light rounded">
+                          <strong class="username mb-1">{Answerer}</strong>
+                          {Answer}
+                        </div>
+                      
                     </div>{/block:Answerer}{/block:Answer}
                 </section>
                 <section class="posts__body">{block:RebloggedFrom}{block:Reblogs}
@@ -263,42 +247,73 @@
                         </div>
                     </div>{/block:NotReblog}
                 </section>
+                
+                {block:Date}
+                {block:HasTags}
+                <footer class="posts__tags">
+                   <ul>{block:Tags}<li> <a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul>
+                   <ul>
+                </footer>
+                {/block:HasTags}
+                
+                
                 <div class="flex items-center justify-between gap-1.5 py-5 px-8 border-b border-gray-light">
                   <a href="{Permalink}">{NoteCountWithLabel}</a>
                   <ul class="flex items-center space-x-5">
-                    <li><a href="#" class="block reblog"><svg viewBox="0 0 17 18.1" width="21" height="21" fill="rgba(var(--black), 0.65)"><path d="M12.8.2c-.4-.4-.8-.2-.8.4v2H2c-2 0-2 2-2 2v5s0 1 1 1 1-1 1-1v-4c0-1 .5-1 1-1h9v2c0 .6.3.7.8.4L17 3.6 12.8.2zM4.2 17.9c.5.4.8.2.8-.3v-2h10c2 0 2-2 2-2v-5s0-1-1-1-1 1-1 1v4c0 1-.5 1-1 1H5v-2c0-.6-.3-.7-.8-.4L0 14.6l4.2 3.3z"></path></svg></a></li>
+                    <li><a href="{ReblogURL}" class="block reblog"><svg viewBox="0 0 17 18.1" width="21" height="21" fill="rgba(var(--black), 0.65)"><path d="M12.8.2c-.4-.4-.8-.2-.8.4v2H2c-2 0-2 2-2 2v5s0 1 1 1 1-1 1-1v-4c0-1 .5-1 1-1h9v2c0 .6.3.7.8.4L17 3.6 12.8.2zM4.2 17.9c.5.4.8.2.8-.3v-2h10c2 0 2-2 2-2v-5s0-1-1-1-1 1-1 1v4c0 1-.5 1-1 1H5v-2c0-.6-.3-.7-.8-.4L0 14.6l4.2 3.3z"></path></svg></a></li>
                     <li><a href="#" class="block like"><svg width="23" height="21" viewBox="0 0 20 18" fill="rgba(var(--black), 0.65)"><path d="M14.658 0c-1.625 0-3.21.767-4.463 2.156-.06.064-.127.138-.197.225-.074-.085-.137-.159-.196-.225C8.547.766 6.966 0 5.35 0 4.215 0 3.114.387 2.162 1.117c-2.773 2.13-2.611 5.89-1.017 8.5 2.158 3.535 6.556 7.18 7.416 7.875A2.3 2.3 0 0 0 9.998 18c.519 0 1.028-.18 1.436-.508.859-.695 5.257-4.34 7.416-7.875 1.595-2.616 1.765-6.376-1-8.5C16.895.387 15.792 0 14.657 0h.001zm0 2.124c.645 0 1.298.208 1.916.683 1.903 1.461 1.457 4.099.484 5.695-1.973 3.23-6.16 6.7-6.94 7.331a.191.191 0 0 1-.241 0c-.779-.631-4.966-4.101-6.94-7.332-.972-1.595-1.4-4.233.5-5.694.619-.475 1.27-.683 1.911-.683 1.064 0 2.095.574 2.898 1.461.495.549 1.658 2.082 1.753 2.203.095-.12 1.259-1.654 1.752-2.203.8-.887 1.842-1.461 2.908-1.461h-.001z"></path></svg></a></li>
                   </ul>
                 </div>
+                {/block:Date}
               </article>
             </div>
                 
              {/block:Posts}
+            {block:Pagination}
+            
+             <div class="article-pagination ml-0 md:ml-24">
+              <ul class="flex items-start justify-between">
+                <li><a {block:PreviousPage}href="{PreviousPage}" class="inline-flex items-center bg-white text-gray-darkest px-4 py-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300 is-disabled"{/block:PreviousPage}><svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg> {lang:Previous page}</a></li>
+                <li><a {block:NextPage}href="{NextPage}" class="inline-flex items-center bg-white text-gray-darkest px-4 py-3 rounded-lg focus:outline-none focus:ring focus:border-blue-300"{/block:NextPage}>{lang:Next page} <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></a></li>
+              </ul>
+            </div>
+            {/block:Pagination}
           </div>
 
           <div class="flex flex-col">
             <div class="bg-white rounded-lg overflow-hidden">
-              <div class="py-6 px-9">
-                <h2 class="text-2xl font-bold">Monthly Picks</h2>
+               <div class="py-6 px-6 flex">
+                <div class="text-green-600 mt-1 mr-5"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                    <path fill="none" d="M0 0h256v256H0z"/>
+                    <path d="M54.46 201.54c-9.203-9.205-3.098-28.528-7.783-39.85C41.82 149.951 24 140.504 24 128c0-12.505 17.82-21.952 22.677-33.69 4.685-11.322-1.42-30.645 7.784-39.85s28.527-3.098 39.85-7.783C106.048 41.82 115.495 24 128 24c12.504 0 21.951 17.82 33.688 22.677 11.323 4.685 30.646-1.42 39.85 7.784s3.1 28.527 7.784 39.85C214.18 106.048 232 115.495 232 128c0 12.504-17.82 21.951-22.677 33.688-4.685 11.323 1.42 30.646-7.784 39.85s-28.527 3.1-39.85 7.784C149.952 214.18 140.505 232 128 232c-12.504 0-21.951-17.82-33.688-22.677-11.323-4.685-30.646 1.42-39.85-7.784Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m172 104-58.667 56L84 132"/>
+                  </svg>                  
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold">Featured theme</h2>
+                  <p class="opacity-50">This post is randomized</p>
+                </div>
               </div>
               <div class="monthly_picks"></div>
             </div>
 
             <div class="sticky top-28 self-start bg-white rounded-lg overflow-hidden mt-16">
-              <div class="py-6 px-9 border-b border-gray">
-                <h2 class="text-2xl font-bold">Recent updates</h2>
-              </div>
-              <div class="flex p-8">
-                  <div class="text-2xl mr-5">
-                    <div class="font-bold">20<sup>th</sup></div>
-                  </div>
-                  <div class="">
-                    <h2 class="text-lg font-bold mb-2">Heading title</h2>
-                    <div class="flex-grow">
-                      <p class="text-gray-dark text-sm">Sit amet massa condimentum aenean penatibus mi, quisque tincidunt. Id nisi, nulla pellentesque condimentum odio sed purus. Enim sagittis neque ut tempor non proin semper.</p>
-                    </div>
+              <div class="py-6 px-6 flex">
+                <div class="mt-1 mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                    <path fill="none" d="M0 0h256v256H0z"/>
+                    <path d="M200 224H56a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96.003L208 88v128a8 8 0 0 1-8 8Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M152 32v56h56.008M96 136h64M96 168h64"/>
+                  </svg>
+                  
+                </div>
+                <div>
+                  <h2 class="text-2xl font-bold">Recent updates</h2>
+                  <p class="opacity-50"><a href="/tagged/blog" class="underline inline-flex items-center">See all posts <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a></p>
                 </div>
               </div>
+              <div class="recent-updates"></div>
             </div>
           </div>
         </div>
@@ -306,46 +321,27 @@
       </section>
     </main>
     
-    <footer class="py-10 px-5 md:pt-12 md:pb-2 bg-white">
-    <div class="max-w-6xl m-auto text-gray-darkest grid grid-cols-2 md:grid-cols-4 gap-4">
-       <div class="">
-          <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
-          <a class="my-3 block" href="/#">Services <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Products <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">About Us <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Pricing <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Partners <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="">
-          <div class="text-xs uppercase text-gray-500 font-medium">User</div>
-          <a class="my-3 block" href="/#">Sign in <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">New Account <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Demo <span class="text-teal-600 text-xs p-1">New</span></a><a class="my-3 block" href="/#">Career <span class="text-teal-600 text-xs p-1">We're hiring</span></a><a class="my-3 block" href="/#">Surveys <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="">
-          <div class="text-xs uppercase text-gray-500 font-medium">Resources</div>
-          <a class="my-3 block" href="/#">Documentation <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Tutorials <span class="text-teal-600 text-xs p-1"></span></a><a class="my-3 block" href="/#">Support <span class="text-teal-600 text-xs p-1">New</span></a> 
-       </div>
-       <div class="">
-          <div class="text-xs uppercase text-gray-500 font-medium mb-3">Contact us</div>
-          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel quod eveniet porro cupiditate harum cum sapiente fuga autem excepturi vitae velit sint error dignissimos aspernatur assumenda, quos tenetur aut.</p>
-       </div>
-    </div>
-    <div class="pt-6">
-      <div class="flex pb-5 m-auto pt-5 border-t border-gray text-gray-dark text-sm flex-col
-         md:flex-row max-w-6xl">
-         <div class="mt-2">© Copyright 2020. All Rights Reserved.</div>
-         <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-            <span>Theme by <a href="https://fukuo.tumblr.com/">Fukuo</a>. Powered by [tumblr]</span>
-            
-         </div>
+    <footer class="bg-white">
+      <div class="flex py-10 m-auto text-gray-dark text-sm flex-col
+      md:flex-row max-w-6xl">
+      <div class="mt-2">© Copyright {CopyRightYears} {Name}. All Rights Reserved.</div>
+      <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+         <span>Theme by <a href="https://fukuo.tumblr.com/">Fukuo</a>. Powered by [tumblr]</span>
       </div>
-   </div>
-  </footer>
+      </div>
+    </footer>
     
-    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://static.tumblr.com/0podkko/jfMplm3f8/modified_photosets.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/boscoxvi/npfphotosets/npfphotosets.js"></script>
-    
     <script>
-       AOS.init({
+        AOS.init({
          once:true
-       });
-      
+        });
+       
+        // https://github.com/annasthms/photosets
+        initPhotosets();
+        
         // https://codematurgy.tumblr.com/post/643394597477875713/npfphotosets-plugin
         const npfOptions = {
            includeCommonPhotosets: false,
@@ -367,7 +363,9 @@
         
         tumblrControls("#121F7A", "#fff", "{Name}"{block:Posts}{block:PermalinkPage}{block:Date}, "{PostID}", "{RelativePermalink}", "true"{/block:Date}{/block:PermalinkPage}{/block:Posts} );
     </script>
-    <script type="text/javascript" src="https://theme-hunter.tumblr.com/api/read/json?&tagged=featured"></script>
-    <script src="https://static.tumblr.com/5ojoydj/zB8qyg8tv/randomize.js"></script> 
+    <script src="https://static.tumblr.com/5ojoydj/hV1qz2le9/update.js"></script>
+    <script src="https://static.tumblr.com/5ojoydj/LmMqz86fs/randomize.js"></script>
+    <script type="text/javascript" src="https://theme-hunter.tumblr.com/api/read/json?&callback=randomize&tagged=featured"></script>
+    <script type="text/javascript" src="https://theme-hunter.tumblr.com/api/read/json?&callback=recents&tagged=blog"></script>
   </body>
 </html>

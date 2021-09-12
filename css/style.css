@@ -12,9 +12,10 @@ blockquote {@apply my-4 border-l-4 px-4 border-blueGray-300;}
 iframe, video, audio { @apply w-full;}
 
 .posts article {@apply w-full;}
-.posts__body { @apply py-6; }
+/* .posts__body { @apply py-6; } */
 .reblog-list { @apply text-blueGray-700; }
-.reblog-list > div { @apply px-8; }
+.reblog-list > div { @apply pt-6 pb-0 px-8; }
+.reblog-list > div:empty { @apply hidden;}
 .reblog-list h1, .reblog-list h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
 .reblog-list p ~ p { @apply my-3; }
 .reblog-list a { @apply underline; }
@@ -31,6 +32,15 @@ iframe, video, audio { @apply w-full;}
 .tmblr-full, .tmblr-embed, .npf_photoset { @apply my-2; }
 .posts__media .tmblr-full, .posts__media .tmblr-embed, .posts__media .npf_photoset {margin:0;}
 .posts__media .tmblr-full *, .posts__media .tmblr-embed *, .posts__media .npf_photoset * {margin:0;}
+.posts__media .tmblr-full, .posts__media .tmblr-embed, .posts__media .npf_photoset {@apply my-6 -mx-5;}
+.posts__media .tmblr-full:first-child, .posts__media .tmblr-embed:first-child, .posts__media .npf_photoset:first-child {@apply my-0 -mx-5;}
+
+.posts__tags {@apply py-3 px-5 border-b border-gray-light;}
+.posts__tags ul { @apply flex items-center flex-wrap;}
+.posts__tags ul li { @apply my-1 mx-1;}
+.posts__tags ul li a { @apply opacity-50 text-base; }
+.posts__tags ul li a::before { content: "#"}
+.posts__tags ul li a[href*="maker"] {@apply font-bold opacity-80 bg-blueGray-300 py-1 px-3 rounded-full;}
 
 .npf-link-block { @apply m-5 flex items-center justify-center rounded overflow-hidden border border-gray-light; }
 .npf-link-block.no-poster .title {@apply p-3 border-b border-gray-light;}
@@ -48,3 +58,23 @@ iframe, video, audio { @apply w-full;}
 .tmblr-iframe-compact .tmblr-iframe--unified-controls {width: 100% !important;}
 @media (min-width: 60rem) {.iframe-controls--phone-mobile,.tmblr-iframe--app-cta-button,.tmblr-iframe:not(#new-tumblr-controls) {visibility: hidden !important;display: none !important;}}
 .iframe-container, iframe#new-tumblr-controls {position: unset;top: 0px;left: 0px;height: 54px;width: 100% !important;}
+
+
+.article-pagination ul li a:not([class]) {@apply inline-flex items-center bg-blue-lighter text-gray-darkest opacity-20 cursor-not-allowed px-4 py-3 rounded-lg;}
+
+.article-profile {@apply absolute max-w-xs bg-white rounded-lg overflow-hidden z-10 top-20 shadow-xl invisible opacity-0 transition duration-150;}
+.article-profile__inner { @apply flex flex-col justify-center;}
+.article-profile__hero { @apply h-0 pb-32;}
+.article-profile__desc {@apply text-center;}
+.article-profile__desc img {@apply mx-auto -mt-10 mb-0 border-4 border-blueGray-200;}
+.article-profile__desc *:not(img) {@apply p-5;}
+
+.npf_quote {font-family: 'Merriweather', serif; font-size: 1.125em; line-height: 1.5;}
+.npf_quote::before {content:'\201C'}
+.npf_quote::after {content:'\201D'}
+
+.npf_quote.medium { font-size:1.5rem;}
+.npf_quote.long { font-size:1.15rem;}
+.npf_quote_source { @apply mt-2;}
+
+.npf_chat {font-family: 'JetBrains Mono', monospace; font-size: 0.875rem;}
