@@ -12,16 +12,18 @@ blockquote {@apply my-4 border-l-4 px-4 border-blueGray-300;}
 iframe, video, audio { @apply w-full;}
 
 .posts article {@apply w-full;}
-/* .posts__body { @apply py-6; } */
+.posts article.chat .posts__body {@apply hidden;}
+.posts__body { @apply p-8; }
 .reblog-list { @apply text-blueGray-700; }
-.reblog-list > div { @apply pt-6 pb-0 px-8; }
+/* .reblog-list > div:not(.reblog-post-avatar) { @apply py-6 px-8; } */
 .reblog-list > div:empty { @apply hidden;}
 .reblog-list h1, .reblog-list h2 { @apply text-2xl font-bold mb-2 text-blueGray-900; }
 .reblog-list p ~ p { @apply my-3; }
 .reblog-list a { @apply underline; }
 .reblog-list ul { @apply list-disc list-inside; }
-.reblog-post-avatar { @apply flex items-center my-2 px-8; }
-.reblog-post-avatar + div { @apply py-4 px-8; }
+.reblog-list + .reblog-list { @apply mt-7;}
+.reblog-post-avatar { @apply flex items-center mb-5; }
+/* .reblog-post-avatar + div { @apply py-4 px-8; } */
 .reblog-post-avatar span { @apply ml-4; }
 .reblog-post-avatar img { @apply w-8 h-8 rounded-md; }
 .reblog-post-avatar .user-blog { @apply font-bold; }

@@ -2,14 +2,15 @@
 
 const randomize = (data) => {
   const container = document.querySelector(".monthly_picks");
-  const postLength = data["posts-total"];
+  // const postLength = data["posts-total"];
+  const postLength = 3;
 
-  console.log(`Jumlah post sebanyak ${postLength}`);
+  // console.log(`Jumlah post sebanyak ${postLength}`);
 
   for (let k = 0; k < 1; k++) {
     const post = data.posts[Math.floor(Math.random() * postLength)];
 
-    console.log(`Post berada di-indeks ${Math.floor(Math.random() * postLength)}`);
+    // console.log(`Post berada di-indeks ${Math.floor(Math.random() * postLength)}`);
     
     const date = post["date"];
     const maker = post["reblogged-from-name"];

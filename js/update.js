@@ -12,10 +12,11 @@ const recents = (data) => {
         element.innerHTML = content;
     };
 
-    for(let j = 0; j < 2; j++) {
+    for(let j = 0; j < 3; j++) {
         const blog = data.posts[j];
         const blog_title = blog["regular-title"];
         const blog_body = blog["regular-body"];
+        const blog_slug = blog["slug"];
         const blog_date = blog["date"];
         const blog_url = blog["url"];
 
@@ -26,7 +27,7 @@ const recents = (data) => {
                 <div class="font-bold">${blog_date.substring(0, 12)}</div>
             </div>
             <div>
-                <h2 class="text-lg font-bold mb-2">${blog_title}</h2>
+                <h2 class="text-lg font-bold mb-2">${blog_title ? blog_title : blog_slug}</h2>
                 <div class="flex-grow is-truncated">
                     ${blog_body}
                 </div>
